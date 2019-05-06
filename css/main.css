@@ -42,7 +42,7 @@
 .picture{
 	margin-bottom: 10px;
 	padding: 0px;
-	box-shadow: 0 8px 6px -6px gray;
+	filter: drop-shadow(0 6px 3px gray);
 }
 
 body{
@@ -59,6 +59,7 @@ body{
 	font-family: 'Lobster', cursive;
 	font-size: 50px;
 	text-shadow: 1px 0 1px black, 0 -1px 1px black, 0 1px 1px black, -1px 0 1px black;
+	filter: drop-shadow(2px 2px 1px gray);
 	transition: font-size 0.5s;
 }
 
@@ -68,7 +69,7 @@ body{
 	margin: 0px 20px 20px 0px;
 	float: left;
 	box-shadow: 4px 4px 2px gray;
-	transition: width 0.5s, height 0.5s;
+	transition: width 0.25s, height 0.25s;
 }
 
 .pfp img:hover{
@@ -85,17 +86,44 @@ ul{
 	margin-left: 100px;
 }
 
+.info section div div a img{
+	width: 90%;
+	height: auto;
+	transition: width 0.25s;
+}
+
+.info section div div a img:hover{
+	width: 100%;
+	height: auto;
+	background-color: rgba(0,0,0,0);
+}
+
+.column {
+  float: left;
+  width: 7%;
+  height: auto;
+  padding: 5px;
+  margin: 0 75px 0 0;
+}
+
+.row::after {
+  content: " ";
+  clear: both;
+  display: block;
+}
+
 .info section a img{
 	width: 30px;
 	height: 30px;
 	padding: 5px;
+	float: right;
 	border-radius: 10px;
-	transition: width 0.5s, height 0.5s;
+	transition: width 0.25s, height 0.25s;
 }
 
 .info section a img:hover{
-	width: 40px;
-	height: 40px;
+	width: 33px;
+	height: 33px;
 	background-color: gray;
 }
 
