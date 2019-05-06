@@ -5,8 +5,11 @@
 }
 
 .header{
+	width: 100%;
 	padding: 15px;
 	background: black;
+	position: fixed;
+	top: 0;
 }
 
 .header::after{
